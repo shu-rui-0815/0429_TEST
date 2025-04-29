@@ -33,6 +33,7 @@
         .row {
             display: flex;
             gap: 20px;
+            margin-bottom: 20px;
         }
         .column {
             flex: 1;
@@ -58,7 +59,8 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 陰影效果 */
             background-color: #f9f9f9;
             padding: 10px;
-            margin-top: 10px;
+            margin-top: 20px;
+            text-align: center;
         }
     </style>
 </head>
@@ -69,19 +71,14 @@
         <div class="introduction">
             <p>透過點擊縣市中的鄉鎮再顯示村里細節。資料以村里為主，但可選擇鄉鎮區塊的資料計算方式要透過村里數值的加總或平均，亦可自由控制是否要顯示鄉鎮區塊。</p>
         </div>
-    </div>
 
-    <!-- 圖片與配文 -->
-    <div class="container">
+        <!-- 圖片與配文 -->
         <div class="row">
             <!-- 第一張圖 -->
             <div class="column">
                 <div class="caption">此圖為彰化縣65-69歲老年人口分布熱圖</div>
                 <div class="iframe-container">
                     <iframe src="https://plotdb.io/v/chart/37310" width="100%" height="600px" allowfullscreen="true" frameborder="0"></iframe>
-                </div>
-                <div class="summary">
-                    <p>根據此圖可看到，彰化縣65-69歲老年人口比例最高的村里多位於較都市的地方，如彰化市、員林市。</p>
                 </div>
             </div>
             <!-- 第二張圖 -->
@@ -90,10 +87,12 @@
                 <div class="iframe-container">
                     <iframe src="https://plotdb.io/v/chart/37324" width="100%" height="600px" allowfullscreen="true" frameborder="0"></iframe>
                 </div>
-                <div class="summary">
-                    <p>根據此圖可看到，彰化縣80-84歲老年人口比例最高的村里多位於較都市的地方，如彰化市、員林市。</p>
-                </div>
             </div>
+        </div>
+
+        <!-- 總結 -->
+        <div class="summary">
+            <p>根據兩張圖可看到，彰化縣中老年人口比例最高的村里多位於較都市的地方，如彰化市、員林市。</p>
         </div>
     </div>
 </body>
